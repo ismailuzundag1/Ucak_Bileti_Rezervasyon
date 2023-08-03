@@ -1,0 +1,115 @@
+.bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+  background-image: url('../havaalani2.jpg'); /* Replace 'path/to/your/background-image.jpg' with the actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Style for the main content */
+.flight-results-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(66, 45, 45, 0.3); /* Set the alpha value to make it semi-transparent */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
+  color: #f9ecec; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100vh;
+  
+  
+
+  h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .flight-card {
+    background-color: #794c4c;
+    padding: 15px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px); /* Add a backdrop filter to create a "blur" effect (not supported in all browsers) */
+    border-radius: 5px;
+    background-color: rgba(66, 45, 45, 0.6); /* Set the alpha value to make it semi-transparent */
+    backdrop-filter: blur(10px);
+    color: #f9ecec; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 16px;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        /* Style flight details */
+        .flight-details {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .flight-info {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .flight-time {
+          font-weight: bold;
+        }
+
+        .flight-airline {
+          color: #333;
+        }
+
+        .flight-price {
+          color: #007bff;
+          font-weight: bold;
+        }
+      }
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      margin: 20px auto;
+      padding: 10px 15px;
+      background-color: #ba1446;
+
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #2e4359;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+  }
+}

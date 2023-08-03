@@ -1,0 +1,93 @@
+.bg-pass-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+    background-image: url('../havaalani2.jpg'); /* Replace 'path/to/your/background-image.jpg' with the actual image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+   
+      
+}
+
+.pas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px;
+    padding: 30px;
+    background-color: #7c6868;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #f9ecec;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(66, 45, 45, 0.6);
+  
+
+    
+    button {
+        justify-content: space-between;
+        padding: 5px 10px;
+        background-color: #ba1446;
+
+        color: #e7d7d7;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        
+    
+        &:hover {
+          background-color: #2e4359;
+        }
+   
+}
+.passenger-input-group {
+    display: flex;
+    flex-direction: row; // Yatay hizalamak için flex-direction'ı row olarak ayarlıyoruz.
+    justify-content: space-between; // İçerikleri eşit aralıklarla yatayda hizalıyoruz.
+    align-items: center; // İçerikleri dikeyde ortalarına hizalıyoruz.
+    
+    label {
+      flex:2; // Label'ları eşit genişlikte yapıyoruz.
+      margin-right: 10px;
+
+    }
+  
+    input {
+      flex: 3; // Inputları label'lardan daha geniş yapıyoruz.
+      margin-left: 10px; // Label ile input arasına boşluk ekliyoruz.
+    }
+    button {
+        flex: 2; // Butonları label ve input alanlarından daha küçük yapıyoruz.
+        margin-left: 10px; // Butonlar arasına boşluk ekliyoruz.
+      }
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+  
+      input {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+    }
+  
+  
+  
+      &:last-child {
+        margin-top: 20px;
+      }
+    }
+  }
